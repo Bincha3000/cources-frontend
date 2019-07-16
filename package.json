@@ -1,0 +1,24 @@
+{
+  "name": "cources-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gladunvv/cources-frontend.git"
+  },
+  "author": "Gladun Vladislav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gladunvv/cources-frontend/issues"
+  },
+  "homepage": "https://github.com/gladunvv/cources-frontend#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.5"
+  }
+}
