@@ -16,6 +16,8 @@ body
 .body
     position: relative
 
+.content
+    padding: 0 20px
 
 .button
     font-family: sans-serif
@@ -26,21 +28,23 @@ body
     text-decoration: none
     background-color: transparent
     height: 26px
-    border-radius: 60px
+    // border-radius: 60px
     color: #333333
     padding: 2px 10px
     border: 1px solid #333
 
     
 .header
-    padding: 0 20px
-    display: flex
-    align-items: center
-    justify-content: space-between
     height: 70px
     background: #f1f1f1
     box-shadow: 1px 3px 6px 0px #c1c1c1
 
+    &__content
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
     &__button
         &-mobile
             display: none
@@ -65,7 +69,7 @@ body
 
     &__text
         font-family: bebas
-        font-size: 35px
+        font-size: 40px
 
 .mobile-menu
     opacity: 0
@@ -81,6 +85,7 @@ body
     position: absolute
     top: 0
     left: 0
+    z-index: 100
 
     &.active
         opacity: 1
@@ -94,9 +99,72 @@ body
             margin-bottom: 40px
 
 
+.title
+    font-family: bebas
+    font-size: 54px
+    margin: 0
+
+    &__main 
+        margin-bottom: 20px
+
+.started-screen
+    background: url("static/images/freedom.jpg") no-repeat
+    background-position: 50% 1%
+    background-size: 300%
+    background-attachment: fixed
+    height: 550px
+
+
+.courses
+    display: flex
+    align-items: center
+    margin: 20px 0
+    flex-direction: column
+
+    &__card
+        min-height: 200px
+        padding: 20px
+
+        &-wrapper
+            display: flex
+            align-items: center
+
+        &-image
+            margin-right: 20px
+
+
+    &__description
+        text-align: left
+        margin: 0
+        font-size: 12px
+
+    &__link
+        box-shadow: 1px 3px 6px 1px #c1c1c1
+        text-decoration: none
+        width: 90%
+        margin-bottom: 30px
+
+    &__title
+        font-family: sans-serif
+        font-size: 20px
+        text-align: center
+        display: block
+        font-weight: bold
+        margin-bottom: 30px
+
+
+
 @media (max-width: 768px)
     .hide-on-mobile
         display: none
     
     .show-on-mobile
         display: block
+
+@media (min-width: 768px)
+    .content
+        padding: 0 50px
+        width: 80%
+        margin: 0 auto
+
+

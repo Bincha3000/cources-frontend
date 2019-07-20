@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body class="body">
     <div class="mobile-menu" id='mobile-menu'>
         <a href='/' class="mobile-menu__item">Login</a>
@@ -13,34 +15,66 @@
         <a id="mobile-menu-close" class="button" href="/">Close</a>
     </div>
     <header class="header">
-        <div class="logo">
-            <img class="logo__img" src="static/images/icon-1.png" alt="logo">
-            <span class="logo__text">SKILL STACK</span>
-        </div>
+        <div class="header__content content">
+            <div class="logo">
+                <img class="logo__img" src="static/images/icon-1.png" alt="logo">
+                <span class="logo__text">SKILL STACK</span>
+            </div>
             <div class="header__buttons">
-                <a class="button header__button hide-on-mobile" href="http://" >LOGIN</a>
-                <a class="button header__button hide-on-mobile" href="http://" >SIGNIN</a>
+                <a class="button header__button hide-on-mobile" href="http://">LOGIN</a>
+                <a class="button header__button hide-on-mobile" href="http://">SIGNIN</a>
                 <span id='menu-btn' class="button header__button header__button-mobile show-on-mobile">Menu</span>
 
             </div>
+        </div>
     </header>
 
     <main class="main">
+        <section class="started-screen">
+                <div class="courses__descriptions content">
+                    <h2 class="title">Get the freedom to choose your future profession</h2>
+                    </div>
+        </section>
 
-        <section class="courses">
-            <div class="courses__descriptions">
-                <h2 class="title"></h2>
-                <p class="text"></p>
-            </div>
-
-            <a class="courses__link" href="">
+        <div class="courses">
+            <span class="title title__main">Courses: </span>
+        <a class="courses__link" href="">
                 <div class="courses__card">
-                    <img class="courses__card-image" src="" alt="">
-                    <span class="courses__title"></span>
-                    <p class="courses__description"></p>
+                    <span class="courses__title">Full Stack Web Deweloper</span>
+                    <div class="courses__card-wrapper">
+                        <img class="courses__card-image" src="static/images/icons8-react-native-100.png" alt="">
+                        <p class="courses__description">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Переулка первую единственное предупреждал последний, большого семантика буквенных строчка. По всей!</p>
+                    </div>
                 </div>
             </a>
-        </section>
+            <a class="courses__link" href="">
+                <div class="courses__card">
+                    <span class="courses__title">Full Stack Web Deweloper</span>
+                    <div class="courses__card-wrapper">
+                        <img class="courses__card-image" src="static/images/icons8-python-100.png" alt="">
+                        <p class="courses__description">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Переулка первую единственное предупреждал последний, большого семантика буквенных строчка. По всей!</p>
+                    </div>
+                </div>
+            </a>
+            <a class="courses__link" href="">
+                <div class="courses__card">
+                    <span class="courses__title">Full Stack Web Deweloper</span>
+                    <div class="courses__card-wrapper">
+                        <img class="courses__card-image" src="static/images/icons8-javascript-100.png" alt="">
+                        <p class="courses__description">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Осталось языкового пунктуация пор но ведущими рот если текстами первую?</p>
+                    </div>
+                </div>
+            </a>
+            <a class="courses__link" href="">
+                <div class="courses__card">
+                    <span class="courses__title">Full Stack Web Deweloper</span>
+                    <div class="courses__card-wrapper">
+                        <img class="courses__card-image" src="static/images/icons8-golang-100.png" alt="">
+                        <p class="courses__description">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Переулка первую единственное предупреждал последний, большого семантика буквенных строчка. По всей!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
         <section class="teachers">
             <div class="teachers__description">
@@ -68,7 +102,7 @@
                 </div>
 
                 <div class="teachers__icon">
-                     <img src="" alt="">
+                    <img src="" alt="">
                     <h3></h3>
                     <p></p>
                 </div>
@@ -104,4 +138,5 @@
     <div id="app"></div>
     <script src="index.js"></script>
 </body>
+
 </html>
