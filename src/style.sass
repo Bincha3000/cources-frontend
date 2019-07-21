@@ -27,13 +27,12 @@ body
     font-size: 17px
     text-transform: uppercase
     display: block
-    line-height: 21px
+    line-height: 26px
     text-decoration: none
     background-color: transparent
     height: 26px
-    // border-radius: 60px
+    padding: 0 10px
     color: #333333
-    padding: 2px 10px
     border: 1px solid #333
 
     
@@ -264,6 +263,16 @@ body
         width: 80%
         margin: 0 auto
 
+    .button
+        padding: 0 30px 
+        height: 36px
+        line-height: 36px
+        transition: 0.2s
+        
+        &:hover
+            background: #fff
+            box-shadow: 0 2px 3px #b7b0b0
+
     .title
         font-size: 90px
 
@@ -273,6 +282,8 @@ body
     .description
         width: 500px
 
+    .background
+        background-attachment: fixed
 
     .description
         font-family: crimson
@@ -281,7 +292,8 @@ body
 
     .card
         width: 500px
-        height: 220px
+        height: 250px
+        transition: 0.2s
 
         &__description
             margin: 0
@@ -289,6 +301,10 @@ body
             font-family: crimson
             text-align: left
             font-size: 18px
+
+        &:hover
+            box-shadow: 2px 5px 6px #c1c1c1
+
 
     .cards-wrapper
         display: flex
