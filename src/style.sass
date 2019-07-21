@@ -82,7 +82,7 @@ body
     justify-content: center
     align-items: center
     width: 100%
-    position: absolute
+    position: fixed
     top: 0
     left: 0
     z-index: 100
@@ -105,15 +105,42 @@ body
     margin: 0
     padding-top: 20px
     opacity: 0.7
+
     &__main 
         margin-bottom: 20px
 
+    &__started-screen
+        color: black
+        font-size: 80px
+
+
+.description
+    font-family: sans-serif
+    font-size: 17px
+    font-weight: bold
+
+.started-screen
+    // height: 550px
+    position: relative
+    z-index: 1
+    padding: 30px 20px
+.background
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: url("static/images/mac.jpg") center no-repeat
+    background-size: cover
+    opacity: 0.3
+    z-index: 0
 
 .section
     display: flex
     align-items: center
     margin: 20px 0
     flex-direction: column
+    padding-bottom: 60px
 
 .card
     box-shadow: 1px 3px 6px 1px #c1c1c1
@@ -172,6 +199,7 @@ body
             width: 100px
 
 .partners
+
     &__images
         padding: 0 20px
         display: flex
@@ -182,6 +210,31 @@ body
         width: 150px
         height: 200px
         object-fit: contain
+
+
+.footer
+    padding: 30px 20px
+    background: linear-gradient(45deg, #d6d6d6, #415b67)
+    border-top: 1px solid #e3e3e3
+    display: flex
+    align-items: center
+    flex-direction: column
+
+    &__title
+        font-size: 70px
+        color: #fff
+    
+    &__links
+        display: flex
+        align-items: center
+
+    &__link
+        text-decoration: none
+
+    &__img
+        height: 40px
+        
+
 
 @media (max-width: 768px)
     .hide-on-mobile
