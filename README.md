@@ -1,4 +1,4 @@
-# cources-frontend
+# courses-frontend
  OTUS Home Work 8 
 
 ## Главная страница сайта с курсами 
@@ -26,7 +26,7 @@
 
 ### Сборка и запуск:
 ```
-git@github.com:gladunvv/cources-frontend.git
+git@github.com:gladunvv/courses-frontend.git
 npm install
 npm start
 ```
