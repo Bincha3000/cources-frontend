@@ -1,5 +1,5 @@
 {
-  "name": "cources-frontend",
+  "name": "courses-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gladunvv/cources-frontend.git"
+    "url": "git+https://github.com/gladunvv/courses-frontend.git"
   },
   "author": "Gladun Vladislav",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gladunvv/cources-frontend/issues"
+    "url": "https://github.com/gladunvv/cousces-frontend/issues"
   },
-  "homepage": "https://github.com/gladunvv/cources-frontend#readme",
+  "homepage": "https://github.com/gladunvv/cousces-frontend#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "sass": "^1.22.5"

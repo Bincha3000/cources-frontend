@@ -9,13 +9,13 @@
 </head>
 
 <body class="body">
-    <div class="mobile-menu" id='mobile-menu'>
-        <a href="courses.html" class="mobile-menu__item">Courses</a>
-        <a href='/' class="mobile-menu__item">Login</a>
-        <a href='/' class="mobile-menu__item">Registration</a>
-        <a id="mobile-menu-close" class="button" href="/">Close</a>
-    </div>
     <header class="header">
+        <div class="mobile-menu" id='mobile-menu'>
+            <a href="/" class="mobile-menu__item">Главная</a>
+            <a href='/' class="mobile-menu__item">Login</a>
+            <a href='/' class="mobile-menu__item">Registration</a>
+            <a id="mobile-menu-close" class="button" href="/">Close</a>
+        </div>
         <div class="header__content content">
             <div class="logo">
                 <img class="logo__img" src="static/images/icon-1.png" alt="logo">
@@ -25,11 +25,9 @@
                 <a class="button header__button hide-on-mobile" href="http://">LOGIN</a>
                 <a class="button header__button hide-on-mobile" href="http://">SIGNIN</a>
                 <span id='menu-btn' class="button header__button header__button-mobile show-on-mobile">Menu</span>
-
             </div>
         </div>
     </header>
-
     <main class="main">
         <div class="started-screen">
             <div class="background">
@@ -37,14 +35,17 @@
             <div class="started-screen__wrapper content">
 
                 <h1 class="title title__started-screen">
-                    Cделай осознанный выбор своей будущей профессии</h1>
-                <p class="description">Лучшие предложения в соотношении цена-качество на рынке образовательных услуг.
-                    Делая мир лучше, начни с cебя!
+                    Курсы:
+                </h1>
+                <p class="description">Выбери курс себе по душе и начни изучать
+                    новейшие технологии в области программирования вместе с нашими высококвалифицированными
+                    преподавателями!
                 </p>
             </div>
         </div>
+
         <div class="section">
-            <span class="title title__main">Курсы: </span>
+            <!-- <span class="title title__main">Курсы: </span> -->
             <div class="cards-wrapper">
 
                 <a class="card" href="#">
@@ -94,84 +95,70 @@
                         </div>
                     </div>
                 </a>
-            </div>
-        </div>
+                <a class="card" href="#">
+                    <div class="card__body">
+                        <span class="card__title">Golang Developer</span>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="static/images/icons8-golang-100.png" alt="">
+                            <p class="card__description">Ну тут все просто, во первых это серверный язык будущего, во
+                                вторых вы видели какой у него маскот??? ЭТО ЖЕ СУСЛИК!
 
-        <section class="teachers section">
-            <div class="teachers__description">
-                <span class="title title__main">Преподаватели: </span>
-                <p class="text"></p>
-            </div>
-            <div class="cards-wrapper">
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__body">
+                        <span class="card__title">React Developer</span>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="static/images/icons8-react-native-100.png" alt="">
+                            <p class="card__description">React — JavaScript-библиотека для разработки пользовательских
+                                интерфейсов. Максимально продвинутый курс, будешь делать одностраничные и мобильные
+                                приложения уже ЗАВТРА!
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__body">
+                        <span class="card__title">Python Developer</span>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="static/images/icons8-python-100.png" alt="">
+                            <p class="card__description">Забудь всё, что ты знал до этого и окунись в непроглядные
+                                джунгли Python. Gamedev? DataScience? "Hello World"? Не проблема, мы научим, а ты
+                                постигнешь Дзен Python!</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__body">
+                        <span class="card__title">JavaScript Developer</span>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="static/images/icons8-javascript-100.png" alt="">
+                            <p class="card__description">Когда был маленьким мечтал стать инспектором гаджетом? Кажется
+                                твое время пришло! Это именно тот инструмент, овладев которым с браузеом у тебя будет
+                                разговор уже на новом уровне!
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__body">
+                        <span class="card__title">Golang Developer</span>
+                        <div class="card__wrapper">
+                            <img class="card__image" src="static/images/icons8-golang-100.png" alt="">
+                            <p class="card__description">Ну тут все просто, во первых это серверный язык будущего, во
+                                вторых вы видели какой у него маскот??? ЭТО ЖЕ СУСЛИК!
 
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Thomas Anderson</span>
-                        <div class="card__wrapper">
-                            <div class="teachers__image-wrapper round-block">
-                                <img class="card__image teachers__image" src="static/images/Anderson.jpg" alt="">
-                            </div>
-                            <p class="card__description">Один из лучших в своём деле, когда-то давно работал в
-                                MetaCortex, но с тех пор успел стать избранным и покинуть матрицу. Подружит машину и
-                                человека на раз.</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Elliot Alderson</span>
-                        <div class="card__wrapper">
-                            <div class="teachers__image-wrapper round-block">
-                                <img class="card__image teachers__image" src="static/images/Robot.jpg" alt="">
-                            </div>
-                            <p class="card__description">Бывший инженер кибербезопасности в компании Allsafe Security, а
-                                также хакер-одиночка. Не будем лезть в его личные проблемы, не все мы умеем хорошо
-                                ладить с людьми, но своё дело он знает.</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Sheldon Cooper</span>
-                        <div class="card__wrapper">
-                            <div class="teachers__image-wrapper round-block">
-                                <img class="card__image teachers__image" src="static/images/Sheldon.jpg" alt="">
-                            </div>
-                            <p class="card__description">Гений! Сами подумайте, сколько паттернов проектирования вы бы
-                                знали, имев эйдетическую памть? А языков программирования? Вот-вот!</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Bertram Gilfoyle</span>
-                        <div class="card__wrapper">
-                            <div class="teachers__image-wrapper round-block">
-                                <img class="card__image teachers__image" src="static/images/Gilfoyle.jpg" alt="">
-                            </div>
-                            <p class="card__description">Системная архитектура, сети и безопасность. Ловит межсайтовые
-                                скриптики, мониторит ДДОС-атаки, откатывает косяки в базах данных и ошибки в транзакциях
                             </p>
                         </div>
                     </div>
                 </a>
             </div>
-        </section>
-
-        <section class="partners section">
-            <span class="title title__main">Наши партнеры:</span>
-            <p class="text"></p>
-            <div class="partners__images">
-                <img class="partners__img" src="static/images/Slurm.png" alt="">
-                <img class="partners__img" src="static/images/Nuka.png" alt="">
-                <img class="partners__img" src="static/images/Duff.png" alt="">
-                <img class="partners__img" src="static/images/Umbrella.png" alt="">
-                <img class="partners__img" src="static/images/LosPolos.png" alt="">
-                <img class="partners__img" src="static/images/Kahuna.png" alt="">
-            </div>
-        </section>
+        </div>
     </main>
     <button class="scroll-up button" id="scroll-up">UPPER</button>
+
     <footer class="footer">
         <div class="footer__content content">
             <div class="logo">
@@ -193,7 +180,6 @@
             </div>
         </div>
     </footer>
-
     <div id="app"></div>
     <script src="index.js"></script>
 </body>
