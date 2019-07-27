@@ -16,6 +16,9 @@ body
     padding: 0
     margin: 0
 
+.decoration_none
+    text-decoration: none
+
 .body
     position: relative
 
@@ -35,7 +38,7 @@ body
     color: #333333
     border: 1px solid #333
 
-    
+
 .header
     height: 70px
     background: #f1f1f1
@@ -48,9 +51,6 @@ body
         justify-content: space-between
     
     &__button
-
-        &-mobile
-            display: none
 
         &:not(:last-child)
             margin-right: 10px
@@ -71,7 +71,7 @@ body
         margin-right: 8px
 
     &__text
-        font-family: ponter
+        font-family: ponter, sans-serif
         font-size: 40px
 
 .mobile-menu
@@ -96,20 +96,20 @@ body
 
     &__item
         text-decoration: none
-        font-family: ponter
+        font-family: ponter, sans-serif
         font-size: 30px
         &:not(:last-child)
             margin-bottom: 40px
 
 
 .title
-    font-family: ponter
+    font-family: ponter, sans-serif
     font-size: 54px
     margin: 0
     padding-top: 20px
     opacity: 0.7
 
-    &__main 
+    &_main 
         margin-bottom: 20px
 
     &__started-screen
@@ -118,7 +118,7 @@ body
 
 
 .description
-    font-family: crimson
+    font-family: crimson, serif
     font-size: 20px
     font-weight: bold
 
@@ -171,12 +171,11 @@ body
 
     &__description
         text-align: left
-        margin: 0
-        margin-left: 20px
+        margin: 0 0 0 20px
         font-size: 12px
 
     &__title
-        font-family: crimson
+        font-family: crimson, serif
         font-size: 20px
         text-align: center
         display: block
@@ -234,6 +233,7 @@ body
     &__title
         font-size: 60px
         color: #fff
+        font-family: ponter, sans-serif
     
     &__links
         display: flex
@@ -254,17 +254,25 @@ body
     right: 20px
     cursor: pointer
 
+.courses
+    &__link
+        &:hover
+            color: #000
+            text-shadow: 0 2px 3px #b7b0b0
 
-@media (max-width: 576px)
-    .hide-on-mobile
-        display: none
+.hide-on-mobile
+    display: none
 
-    .show-on-mobile
-        display: block
-
+.show-on-mobile
+    display: block
 
 
 @media (min-width: 576px)
+
+    .hide-on-mobile
+        display: block
+    .show-on-mobile
+        display: none
 
     .content
         padding: 0 50px
@@ -284,12 +292,6 @@ body
     .title
         font-size: 90px
 
-        &__link
-            text-decoration: none
-            &:hover
-                color: #000
-                text-shadow: 0 2px 3px #b7b0b0
-
         &__started-screen
             width: 400px
 
@@ -300,7 +302,7 @@ body
         background-attachment: fixed
 
     .description
-        font-family: crimson
+        font-family: crimson, serif
         font-size: 27px
         font-weight: bold
 
@@ -312,7 +314,7 @@ body
         &__description
             margin: 0
             margin-left: 20px
-            font-family: crimson
+            font-family: crimson, serif
             text-align: left
             font-size: 18px
 
