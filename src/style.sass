@@ -16,7 +16,7 @@ body
     padding: 0
     margin: 0
 
-.decoration_none
+.link_decoration-none
     text-decoration: none
 
 .body
@@ -259,6 +259,50 @@ body
         &:hover
             color: #000
             text-shadow: 0 2px 3px #b7b0b0
+
+.accordion 
+    background-color: #eee
+    color: #444
+    cursor: pointer
+    padding: 18px
+    width: 80%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 20px
+    font-weight: bold
+    font-family: pointer
+    transition: 0.4s
+
+    &__text
+        font-size: 18px
+
+        &-data
+            font-weight: bold
+            display: block
+            margin-top: 10px
+
+.active, .accordion:hover 
+    background-color: #ccc
+
+.accordion:after
+    content: '\002B'
+    color: #777
+    font-weight: bold
+    float: right
+    margin-left: 5px
+
+.active:after
+    content: "\2212"
+
+.panel
+    padding: 0 18px
+    width: 80%
+    background-color: white
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-outs
+
 
 .hide-on-mobile
     display: none

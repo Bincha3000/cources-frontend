@@ -1,186 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
+  </head>
 
-<body class="body">
+  <body class="body">
     <header class="header">
-        <div class="mobile-menu" id='mobile-menu'>
-            <a href="/" class="mobile-menu__item">Главная</a>
-            <a href='/' class="mobile-menu__item">Login</a>
-            <a href='/' class="mobile-menu__item">Registration</a>
-            <a id="mobile-menu-close" class="button" href="/">Close</a>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="/" class="mobile-menu__item">Главная</a>
+        <a href="/" class="mobile-menu__item">Login</a>
+        <a href="/" class="mobile-menu__item">Registration</a>
+        <a id="mobile-menu-close" class="button" href="/">Close</a>
+      </div>
+      <div class="header__content content">
+        <div class="logo">
+          <img class="logo__img" src="static/images/icon-1.png" alt="logo" />
+          <a href="/" class="logo__text title__link link_decoration-none"
+            >SKILL STACK</a
+          >
         </div>
-        <div class="header__content content">
-            <div class="logo">
-                <img class="logo__img" src="static/images/icon-1.png" alt="logo">
-                <a href="/" class="logo__text title__link decoration_none">SKILL STACK</a>
-            </div>
-            <div class="header__buttons">
-                <a class="button header__button" href="http://">LOGIN</a>
-                <a class="button header__button" href="http://">SIGNIN</a>
-                <span id='menu-btn' class="button header__button header__button-mobile ">Menu</span>
-            </div>
+        <div class="header__buttons">
+          <a class="button header__button visible-on-mobile" href="http://"
+            >LOGIN</a
+          >
+          <a class="button header__button visible-on-mobile" href="http://"
+            >SIGNIN</a
+          >
+          <span id="menu-btn" class="button header__button visible-on-mobile"
+            >Menu</span
+          >
         </div>
+      </div>
     </header>
     <main class="main">
-        <div class="started-screen">
-            <div class="background">
-            </div>
-            <div class="started-screen__wrapper content">
+      <div class="started-screen">
+        <div class="background"></div>
+        <div class="started-screen__wrapper content">
+          <h1 class="title title__started-screen">
+            Курсы:
+          </h1>
+          <p class="description">
+            Выбери курс себе по душе и начни изучать новейшие технологии в
+            области программирования вместе с нашими высококвалифицированными
+            преподавателями!
+          </p>
+        </div>
+      </div>
 
-                <h1 class="title title__started-screen">
-                    Курсы:
-                </h1>
-                <p class="description">Выбери курс себе по душе и начни изучать
-                    новейшие технологии в области программирования вместе с нашими высококвалифицированными
-                    преподавателями!
+      <div class="section">
+        <div class="cards-wrapper">
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">React Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-react-native-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  React — JavaScript-библиотека для разработки пользовательских
+                  интерфейсов. Максимально продвинутый курс, будешь делать
+                  одностраничные и мобильные приложения уже ЗАВТРА!
                 </p>
+              </div>
             </div>
-        </div>
-
-        <div class="section">
-            <div class="cards-wrapper">
-
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">React Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-react-native-100.png" alt="">
-                            <p class="card__description">React — JavaScript-библиотека для разработки пользовательских
-                                интерфейсов. Максимально продвинутый курс, будешь делать одностраничные и мобильные
-                                приложения уже ЗАВТРА!
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Python Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-python-100.png" alt="">
-                            <p class="card__description">Забудь всё, что ты знал до этого и окунись в непроглядные
-                                джунгли Python. Gamedev? DataScience? "Hello World"? Не проблема, мы научим, а ты
-                                постигнешь Дзен Python!</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">JavaScript Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-javascript-100.png" alt="">
-                            <p class="card__description">Когда был маленьким мечтал стать инспектором гаджетом? Кажется
-                                твое время пришло! Это именно тот инструмент, овладев которым с браузеом у тебя будет
-                                разговор уже на новом уровне!
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Golang Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-golang-100.png" alt="">
-                            <p class="card__description">Ну тут все просто, во первых это серверный язык будущего, во
-                                вторых вы видели какой у него маскот??? ЭТО ЖЕ СУСЛИК!
-
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Golang Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-golang-100.png" alt="">
-                            <p class="card__description">Ну тут все просто, во первых это серверный язык будущего, во
-                                вторых вы видели какой у него маскот??? ЭТО ЖЕ СУСЛИК!
-
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">React Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-react-native-100.png" alt="">
-                            <p class="card__description">React — JavaScript-библиотека для разработки пользовательских
-                                интерфейсов. Максимально продвинутый курс, будешь делать одностраничные и мобильные
-                                приложения уже ЗАВТРА!
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Python Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-python-100.png" alt="">
-                            <p class="card__description">Забудь всё, что ты знал до этого и окунись в непроглядные
-                                джунгли Python. Gamedev? DataScience? "Hello World"? Не проблема, мы научим, а ты
-                                постигнешь Дзен Python!</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">JavaScript Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-javascript-100.png" alt="">
-                            <p class="card__description">Когда был маленьким мечтал стать инспектором гаджетом? Кажется
-                                твое время пришло! Это именно тот инструмент, овладев которым с браузеом у тебя будет
-                                разговор уже на новом уровне!
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__body">
-                        <span class="card__title">Golang Developer</span>
-                        <div class="card__wrapper">
-                            <img class="card__image" src="static/images/icons8-golang-100.png" alt="">
-                            <p class="card__description">Ну тут все просто, во первых это серверный язык будущего, во
-                                вторых вы видели какой у него маскот??? ЭТО ЖЕ СУСЛИК!
-
-                            </p>
-                        </div>
-                    </div>
-                </a>
+          </a>
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">Python Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-python-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  Забудь всё, что ты знал до этого и окунись в непроглядные
+                  джунгли Python. Gamedev? DataScience? "Hello World"? Не
+                  проблема, мы научим, а ты постигнешь Дзен Python!
+                </p>
+              </div>
             </div>
+          </a>
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">JavaScript Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-javascript-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  Когда был маленьким мечтал стать инспектором гаджетом? Кажется
+                  твое время пришло! Это именно тот инструмент, овладев которым
+                  с браузеом у тебя будет разговор уже на новом уровне!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">Golang Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-golang-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  Ну тут все просто, во первых это серверный язык будущего, во
+                  вторых вы видели какой у него маскот??? ЭТО ЖЕ СУСЛИК!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">Golang Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-golang-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  Ну тут все просто, во первых это серверный язык будущего, во
+                  вторых вы видели какой у него маскот??? ЭТО ЖЕ СУСЛИК!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">React Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-react-native-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  React — JavaScript-библиотека для разработки пользовательских
+                  интерфейсов. Максимально продвинутый курс, будешь делать
+                  одностраничные и мобильные приложения уже ЗАВТРА!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">Python Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-python-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  Забудь всё, что ты знал до этого и окунись в непроглядные
+                  джунгли Python. Gamedev? DataScience? "Hello World"? Не
+                  проблема, мы научим, а ты постигнешь Дзен Python!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">JavaScript Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-javascript-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  Когда был маленьким мечтал стать инспектором гаджетом? Кажется
+                  твое время пришло! Это именно тот инструмент, овладев которым
+                  с браузеом у тебя будет разговор уже на новом уровне!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="timetable.html">
+            <div class="card__body">
+              <span class="card__title">Golang Developer</span>
+              <div class="card__wrapper">
+                <img
+                  class="card__image"
+                  src="static/images/icons8-golang-100.png"
+                  alt=""
+                />
+                <p class="card__description">
+                  Ну тут все просто, во первых это серверный язык будущего, во
+                  вторых вы видели какой у него маскот??? ЭТО ЖЕ СУСЛИК!
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
+      </div>
     </main>
     <button class="scroll-up button" id="scroll-up">UPPER</button>
 
     <footer class="footer">
-        <div class="footer__content content">
-            <div class="logo">
-                <span class="logo__text footer__title">Skill Stack</span>
-            </div>
-            <div class="footer__links">
-                <a class="footer__link" href="#">
-                    <img class="footer__img" src="static/images/icons8-skype-100.png" alt="">
-                </a>
-                <a class="footer__link" href="#">
-                    <img class="footer__img" src="static/images/icons8-telegram-app-100.png" alt="">
-                </a>
-                <a class="footer__link" href="#">
-                    <img class="footer__img" src="static/images/icons8-twitter-circled-100.png" alt="">
-                </a>
-                <a class="footer__link" href="#">
-                    <img class="footer__img" src="static/images/icons8-facebook-100.png" alt="">
-                </a>
-            </div>
+      <div class="footer__content content">
+        <div class="logo">
+          <span class="logo__text footer__title">Skill Stack</span>
         </div>
+        <div class="footer__links">
+          <a class="footer__link" href="#">
+            <img
+              class="footer__img"
+              src="static/images/icons8-skype-100.png"
+              alt=""
+            />
+          </a>
+          <a class="footer__link" href="#">
+            <img
+              class="footer__img"
+              src="static/images/icons8-telegram-app-100.png"
+              alt=""
+            />
+          </a>
+          <a class="footer__link" href="#">
+            <img
+              class="footer__img"
+              src="static/images/icons8-twitter-circled-100.png"
+              alt=""
+            />
+          </a>
+          <a class="footer__link" href="#">
+            <img
+              class="footer__img"
+              src="static/images/icons8-facebook-100.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
     </footer>
     <!-- <div id="app"></div>
     <script src="index.js"></script> -->
-</body>
-
+  </body>
 </html>
